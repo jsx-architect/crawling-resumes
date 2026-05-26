@@ -1,0 +1,21 @@
+{
+  "name": "postjobfree-resume-judge",
+  "version": "1.0.0",
+  "description": "Scrape PostJobFree resumes and judge React+Node focus via OpenAI",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "scrape": "node src/index.js --scrape-only",
+    "judge": "node src/index.js --judge-only"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.7",
+    "openai": "^4.77.0",
+    "p-limit": "^6.2.0"
+  }
+}
